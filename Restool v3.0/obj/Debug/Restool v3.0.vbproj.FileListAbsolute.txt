@@ -17,16 +17,3 @@ C:\Users\Public\Restool\Restool v3.0\obj\Debug\Restool v4.0.pdb
 C:\Users\ResTech\Documents\GitHub\BenRestool\Restool v3.0\obj\Debug\Restool v4.0.exe
 C:\Users\ResTech\Documents\GitHub\BenRestool\Restool v3.0\obj\Debug\Restool v4.0.xml
 C:\Users\ResTech\Documents\GitHub\BenRestool\Restool v3.0\obj\Debug\Restool v4.0.pdb
-C:\Users\ResTech\Documents\GitHub\BenRestool\Restool v3.0\bin\Debug\Restool v4.0.exe.manifest
-C:\Users\ResTech\Documents\GitHub\BenRestool\Restool v3.0\bin\Debug\Restool v4.0.application
-C:\Users\ResTech\Documents\GitHub\BenRestool\Restool v3.0\bin\Debug\Restool v4.0.exe
-C:\Users\ResTech\Documents\GitHub\BenRestool\Restool v3.0\bin\Debug\Restool v4.0.pdb
-C:\Users\ResTech\Documents\GitHub\BenRestool\Restool v3.0\bin\Debug\Restool v4.0.xml
-C:\Users\ResTech\Documents\GitHub\BenRestool\Restool v3.0\obj\Debug\ResolveAssemblyReference.cache
-C:\Users\ResTech\Documents\GitHub\BenRestool\Restool v3.0\obj\Debug\WindowsApplication1.ResTool.resources
-C:\Users\ResTech\Documents\GitHub\BenRestool\Restool v3.0\obj\Debug\WindowsApplication1.Form1.resources
-C:\Users\ResTech\Documents\GitHub\BenRestool\Restool v3.0\obj\Debug\WindowsApplication1.Resources.resources
-C:\Users\ResTech\Documents\GitHub\BenRestool\Restool v3.0\obj\Debug\GenerateResource.read.1.tlog
-C:\Users\ResTech\Documents\GitHub\BenRestool\Restool v3.0\obj\Debug\GenerateResource.write.1.tlog
-C:\Users\ResTech\Documents\GitHub\BenRestool\Restool v3.0\obj\Debug\Restool v4.0.exe.manifest
-C:\Users\ResTech\Documents\GitHub\BenRestool\Restool v3.0\obj\Debug\Restool v4.0.application

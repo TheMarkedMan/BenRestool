@@ -43,7 +43,6 @@
     '##################################################################################
 
     Public Function checkAVInstalls(ByRef AVCount As Integer, ByRef AVInstalled As String) As Boolean
-        Console.WriteLine("Starting AV Check")
         Dim programFiles32 As String = System.Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles) 'Program Files 32-bit machines
         Dim programFiles64 As String = System.Environment.GetFolderPath(Environment.SpecialFolder.ProgramFilesX86) 'Program Files 64-bit machine
         Dim programFiles As String = ""
@@ -61,46 +60,31 @@
 
         Dim AVProgramsToCheck(5, 1) As String
         AVProgramsToCheck = {
-            {"McAfee VirusScan Enterprise", programFiles & "\McAfee\VirusScan Enterprise\scan32.exe"},
-            {"Microsoft Security Essentials", programFiles32 & "\Microsoft Security Client\msseces.exe"},
             {"Malwarebytes' Anti-Malware", programFiles & "\Malwarebytes' Anti-Malware\mbam.exe"},
             {"Spybot - Search & Destroy", programFiles & "\Spybot - Search & Destroy\SDMain.exe"},
             {"ESET Online Scanner", programFiles & "\ESET\ESET Online Scanner\OnlineScannerApp.exe"},
+            {"McAfee VirusScan Enterprise", programFiles & "\McAfee\VirusScan Enterprise\scan32.exe"},
             {"Sophos Anti-Rootkit", programFiles & "\Sophos\Sophos Anti-Rootkit\sargui.exe"},
             {"Super Anti-Spyware", programFiles32 & "\SUPERAntiSpyware\RUNSAS.exe"}
         }
 
-
         'Loop through array and check installs
-        For index As Integer = 0 To ((AVProgramsToCheck.Length / 2) - 1) Step 1
+        For index As Integer = 1 To ((AVProgramsToCheck.Length / 2) - 1) Step 1
             If isThisProgramInstalled(AVProgramsToCheck(index, 1), True) Then
                 AVCount += 1
                 AVInstalled += AVProgramsToCheck(index, 0) & vbCrLf                            'Add name to AV list string
-                Console.WriteLine("Found: " & AVProgramsToCheck(index, 0))
             End If
         Next
 
+
+        'If System.IO.File.Exists(programFiles & "\Malwarebytes' Anti-Malware\mbam.exe") = True Then
+        '    AVCount += 1
+        '    AVInstalled += "Malwarebytes' Anti-Malware" & vbCrLf
+        'End If
         'There is another McAfee program Security Scan that is seen often but it is in a folder that is named with a version number
         'so I'm not sure how to approach that yet - Ben
 
         Return True
-    End Function
-
-    '##################################################################################
-    '#           findAvDir
-    '# Use:      Finds the correct directory of an AV program
-    '# Returns:  Ran correctly or not as boolean
-    '##################################################################################
-
-    Public Function findAvDir(ByRef programDir As String) As Boolean
-        Dim folder As New IO.DirectoryInfo(programDir)
-        If Not folder.Exists Then
-            Return False                                     'Return false: Didn't find directory
-        End If
-
-        For Each Dir As String In IO.Directory.GetDirectories(programDir)
-            Console.WriteLine(Dir)
-        Next
     End Function
 
 End Module
