@@ -491,32 +491,26 @@ Public Class ResTool
     '# Use:       Checks for multiple anti-virus programs.
     '##################################################################################
     Private Sub bMultipleAV_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles bMultipleAV.Click
+        If cbTutorial.Checked = True Then
+            ' Display tutorial instead of running the program/script.
+        Else
+            Dim AVCount As Integer = 0
+            Dim AVInstalled As String = ""
 
-        'SORRY CODY!
-
-        'If cbTutorial.Checked = True Then
-        '    ' Display tutorial instead of running the program/script.
-        'Else
-        '    Dim AVCount As Integer = 0
-        '    Dim AVInstalled As String = ""
-
-        '    'MsgBox("This isn't officially supported yet.", , "Error 37!")
-        '    'Return 'Comment out for testing
-        '#
-        '#  There is no point to check for these programs. This button is for checking for multiple ANTIVIRUS programs such as Norton, McAfee, etc.
-        '#
-        '    If checkAVInstalls(AVCount, AVInstalled) Then
-        '        If AVCount > 1 Then
-        '            MsgBox("The user appears to have " & AVCount & " AV programs installed." & vbCrLf & "Including:" & vbCrLf & AVInstalled, 0, "More than one AV detected")
-        '        ElseIf AVCount = 1 Then
-        '            MsgBox("The user appears to only have one AV program installed:" & vbCrLf & AVInstalled, 0, "Only one AV detected")
-        '        ElseIf AVCount = 0 Then
-        '            MsgBox("The user does not appear to have an AV installed." & vbCrLf & "Please report if this is in error", 0, "No AV detected")
-        '        End If
-        '    Else
-        '        MsgBox("Something broke.", 0, "Error")
-        '    End If
-        'End If
+            'MsgBox("This isn't officially supported yet.", , "Error 37!")
+            'Return 'Comment out for testing
+            If checkAVInstalls(AVCount, AVInstalled) Then
+                If AVCount > 1 Then
+                    MsgBox("The user appears to have " & AVCount & " AV programs installed." & vbCrLf & "Including:" & vbCrLf & AVInstalled, 0, "More than one AV detected")
+                ElseIf AVCount = 1 Then
+                    MsgBox("The user appears to only have one AV program installed:" & vbCrLf & AVInstalled, 0, "Only one AV detected")
+                ElseIf AVCount = 0 Then
+                    MsgBox("The user does not appear to have an AV installed." & vbCrLf & "Please report if this is in error", 0, "No AV detected")
+                End If
+            Else
+                MsgBox("Something broke.", 0, "Error")
+            End If
+        End If
     End Sub
 
     '##################################################################################
