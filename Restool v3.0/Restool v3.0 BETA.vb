@@ -169,9 +169,9 @@
     'Returns:   Nothing, just uninstalls the program.
     '##################################################################################
     Private Sub avg_removal_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles avg_removal.Click
-        Dim address As String
-        Dim file As String
-        Dim name As String
+        Dim address As String = ""
+        Dim file As String = ""
+        Dim name As String = ""
         If findArchitecture() = 64 Then
             address = server2 & "avgr64.exe"
             file = System.Environment.GetFolderPath(Environment.SpecialFolder.Desktop) & "\avgr64.exe"

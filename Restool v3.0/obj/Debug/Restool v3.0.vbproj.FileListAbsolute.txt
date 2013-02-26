@@ -1,0 +1,19 @@
+C:\Users\Public\Restool\Restool v3.0\bin\Debug\Restool v4.0.exe.manifest
+C:\Users\Public\Restool\Restool v3.0\bin\Debug\Restool v4.0.application
+C:\Users\Public\Restool\Restool v3.0\bin\Debug\Restool v4.0.exe
+C:\Users\Public\Restool\Restool v3.0\bin\Debug\Restool v4.0.pdb
+C:\Users\Public\Restool\Restool v3.0\bin\Debug\Restool v4.0.xml
+C:\Users\Public\Restool\Restool v3.0\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Public\Restool\Restool v3.0\obj\Debug\WindowsApplication1.ResTool.resources
+C:\Users\Public\Restool\Restool v3.0\obj\Debug\WindowsApplication1.Form1.resources
+C:\Users\Public\Restool\Restool v3.0\obj\Debug\WindowsApplication1.Resources.resources
+C:\Users\Public\Restool\Restool v3.0\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Public\Restool\Restool v3.0\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Public\Restool\Restool v3.0\obj\Debug\Restool v4.0.exe.manifest
+C:\Users\Public\Restool\Restool v3.0\obj\Debug\Restool v4.0.application
+C:\Users\Public\Restool\Restool v3.0\obj\Debug\Restool v4.0.exe
+C:\Users\Public\Restool\Restool v3.0\obj\Debug\Restool v4.0.xml
+C:\Users\Public\Restool\Restool v3.0\obj\Debug\Restool v4.0.pdb
+C:\Users\ResTech\Documents\GitHub\BenRestool\Restool v3.0\obj\Debug\Restool v4.0.exe
+C:\Users\ResTech\Documents\GitHub\BenRestool\Restool v3.0\obj\Debug\Restool v4.0.xml
+C:\Users\ResTech\Documents\GitHub\BenRestool\Restool v3.0\obj\Debug\Restool v4.0.pdb
